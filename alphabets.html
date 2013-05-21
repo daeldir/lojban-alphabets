@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/translate.js"></script>
+    <script src="js/cyrillic.js"></script>
+    <script src="js/tengwar.js"></script>
+    <script src="js/braille.js"></script>
+    <script src="js/display.js"></script>
+    <link rel="Stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header><h1>Lojban Alphabets Showcase</h1></header>
+    <main>
+    <h2>Description</h2>
+    <p>
+      Many alphabets have been proposed for Lojban. Latin alphabet is used for
+      convenience of most western european people. Cyrillic has been introduced
+      to help russian learning. Hiragana has been proposed, too. Also, a
+      tengwar mode has been created, it's authors stating that it is better to
+      use that alphabet in lojban, since it <em>is</em> culturally neutral, and
+      has some interesting properties from a linguistic point of view. I
+      included braille that I think may also be culturally neutral, but there
+      are differences in braille from different countries, and braille is not
+      really easy to read with the eyes: it may be better suited for blind
+      people than for screen reading! As hangul has some traits of the tengwar,
+      being invented with linguistic in mind we may decide to give it a try
+      too.
+    </p>
+    <p>
+      The goal of this page is to see what a text in lojban looks like when
+      written in the different existing alphabets. Who knows, we may, in the end,
+      create a new alphabet borrowing from all these ones, as it has been done to
+      create gismu... In fact, this page is here essentially to satisfy our
+      curiosity. If you want to add or imporve an alphabet, feel free! The git
+      repository is <a href="https://github.com/daeldir/lojban-alphabets">here</a>.
+    </p>
+    <p>
+      Notes about each transcription methods are found in the source code. When
+      I have time, I may get them on an HTML page, and improve the user
+      experience of that page (better input method, better view of the
+      differents alphabets, description on it's own page...).
+    </p>
+    <h2>Input</h2>
+    <textarea id="input"></textarea>
+    <div id="display"></div>
+    </main>
+    <footer>
+      <p>
+        <a href="http://home.student.uu.se/jowi4905/fonts/annatar.html">Tengwar
+        font</a>, by Johan Winge. <a href="fonts/tngan120.zip">Here</a> is the
+        unmodified font package, as required by the license. According to the
+        license, this page may not be suitable for commercial use (see the font
+        license for more precisions).
+      </p>
+    </footer>
+  </body>
+</html>

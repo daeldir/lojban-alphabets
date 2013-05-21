@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'tengwar';
+  src: url(../fonts/tngan.ttf);
+}
+@media screen and (min-width: 800px) {
+  body {
+    width: 60%;
+    left: 20%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  body {
+    width: 80%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    width: 90%;
+    left: 5%;
+  }
+}
+body {
+  position: absolute;
+  text-align: justify;
+}
+h1 {
+  text-align: center;
+}
+header {
+  font-size: 1.2em;
+}
+footer {
+  font-size: 0.8em;
+}
+#tengwar {
+  font-family: 'tengwar';
+}
+textarea {
+  width: 98%;
+  height: 100px;
+}
+
