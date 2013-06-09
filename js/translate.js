@@ -77,6 +77,8 @@ var tests = (function () {
             classes.consonant + '|' + classes.vowel + '|' + 
             classes.punctuation,
     upperCase: classes.upperCase + conditions.manyTimes,
+    atLeastOneUpperCase: classes.any + '*' + classes.upperCase + 
+                         classes.any + '*'
   }
   return {
     isVowel:       makeTest(classes.vowel, 'i'),
@@ -85,6 +87,7 @@ var tests = (function () {
     isDiphtong:    makeTest(groups.diphtong, 'i'),
     isSyllable:    makeTest(groups.syllable, 'i'),
     isUpperCase:   makeTest(expressions.upperCase),
+    hasUpperCase:  makeTest(expressions.atLeastOneUpperCase),
     isNumber:      makeTest(classes.number),
     groups:        new RegExp(expressions.groups, 'gi'),
     each:          new RegExp(classes.any, 'g')

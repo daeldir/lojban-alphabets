@@ -32,7 +32,7 @@ maps.tengwar = {
  * it's latin version (which is marked by that letter being in upper case).
  */
 var tengwarStress = function (character) {
-  if (tests.isUpperCase(character)) return maps.tengwar.stress;
+  if (tests.hasUpperCase(character)) return maps.tengwar.stress;
   return '';
 };
 
